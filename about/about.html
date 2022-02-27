@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>謝松霖 | Hsieh Sung Lin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="flex-menu" style="bottom: 0px;">
+            <ul>
+                <li><a href="#text">About</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+            </ul>
+            <div class="social" id="social">
+                <a v-bind:href="instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+        <label for="rwd-menu-switch" class="bars"></label>
+    </header>
+
+    <!-- rwd -->
+    <!-- <div class="rwdContent">
+        <ul class="rwd-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Project</a></li>
+        </ul>
+        
+    </div> -->
+    <!-- rwd -->
+
+    <main>
+        <div class="about" >
+            <div class="leftArea">
+                <div class="content">
+                    <div class="logo">
+                        <h2>{{ englishname1 }}
+                            <br>
+                            {{ englishname2 }}
+                            <br>
+                            {{ englishname3 }}
+                        </h2>
+                    </div>
+                    <div class="personalPic">
+                        <img src="/Portfolio/about/img/personalPic.png" alt="">
+                    </div>
+                    <div class="contact">
+                        <div class="marquee">
+                            <span>Conact with me&emsp;Conact with me&emsp;Conact with me&emsp;Conact with me&emsp;Conact with me&emsp;</span>
+                        </div>
+                        <ul>
+                            <li>{{ name }}</li>
+                            <li>{{ contact2 }}</li>
+                            <li>{{ contact3 }}</li>
+                            <li>{{ contact4 }}</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="rightArea">
+                <div class="content">
+                    <section class="text" id="text">
+                        <div>
+                            <p>
+                                &quot;{{ text1 }}&quot;
+                            </p>
+                            <p>
+                                {{ text2 }}
+                            </p>
+                            <p>
+                                {{ text3 }}
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="info" id="info">
+                        <div class="content">
+                            <div class="infoTop">
+                                <div class="experienceList">
+                                    <h3>
+                                        {{ experienceh3 }}
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            <h6>{{ time1 }}</h6>
+                                            <p>{{ experience1 }}</p>
+                                        </li>
+                                        <li>
+                                            <h6>{{ time2 }}</h6>
+                                            <p>{{ experience2 }}</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="education">
+                                    <h3>
+                                        {{ educationh3 }}
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            <h6>{{ time1 }}</h6>
+                                            <p>{{ education1 }}</p>
+                                        </li>
+                                        <li>
+                                            <h6>{{ time2 }}</h6>
+                                            <p>{{ education2 }}</p>
+                                        </li>
+                                        <li>
+                                            <h6>{{ time3 }}</h6>
+                                            <p>{{ education3 }}</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="software">
+                                <ul>
+                                    <li class="frontEnd">
+                                        <h3 >
+                                            {{ frontEndh3 }}
+                                        </h3>
+                                        <ul>
+                                            <li>{{ frontEnd1 }}</li>
+                                            <li>{{ frontEnd2 }}</li>
+                                            <li>{{ frontEnd3 }}</li>
+                                            <li>{{ frontEnd4 }}</li>
+                                            <li>{{ frontEnd5 }}</li>
+                                            <li>{{ frontEnd6 }}</li>
+                                        </ul>
+                                    </li>
+                                    <li class="tools">
+                                        <h3>
+                                            {{ toolh3 }}
+                                        </h3>
+                                        <ul>
+                                            <li>{{ tool1 }}</li>
+                                            <li>{{ tool2 }}</li>
+                                            <li>{{ tool3 }}</li>
+                                            <li>{{ tool4 }}</li>
+                                            <li>{{ tool5 }}</li>
+                                            <li>{{ tool6 }}</li>
+                                        </ul>
+                                    </li>
+                                    <li class="archis">
+                                        <h3>
+                                            {{ archih3 }}
+                                        </h3>
+                                        <ul>
+                                            <li>{{ archi1 }}</li>
+                                            <li>{{ archi2 }}</li>
+                                            <li>{{ archi3 }}</li>
+                                            <li>{{ archi4 }}</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="experience" id="experience">
+                        <h2>{{ experienceh2 }}</h2>
+                        <div class="timeline">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <h3>{{ project1 }}</h3>
+                                        <p>{{ project_text1 }}</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>{{ project2 }}</h3>
+                                        <p>{{ project_text2 }}</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>{{ project3 }}</h3>
+                                        <p>{{ project_text3 }}</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>{{ project4 }}</h3>
+                                        <p>{{ project_text4 }}</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>{{ project5 }}</h3>
+                                        <p>{{ project_text5 }}</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>{{ project6 }}</h3>
+                                        <p>{{ project_text6 }}</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>{{ project7 }}</h3>
+                                        <p>{{ project_text7 }}</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>{{ project8 }}</h3>
+                                        <p>{{ project_text8 }}</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>{{ project9 }}</h3>
+                                        <p>{{ project_text9 }}</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>{{ project10 }}</h3>
+                                        <p>{{ project_text10 }}</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>{{ project11 }}</h3>
+                                        <p>{{ project_text11 }}</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>{{ project12 }}</h3>
+                                        <p>{{ project_text12 }}</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>{{ project13 }}</h3>
+                                        <p>{{ project_text13 }}</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <span class="space"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="copyright" id="copyright">
+                {{name}}{{year}} Copyright. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <button class="goTop"></button>
+    
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

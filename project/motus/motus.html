@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>謝松霖 | Hsieh Sung Lin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="flex-menu" style="bottom: 0px;">
+            <ul>
+                <li><a href="#text">About</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+            </ul>
+            <div class="social" id="social">
+                <a v-bind:href="instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+        <label for="rwd-menu-switch" class="bars"></label>
+    </header>
+
+    <main>
+        <div class="about" >
+            <div class="leftArea">
+                <a href="#" class="goBack">Back To List</a>
+                <div class="content" id="leftAreaContent">
+                    <div class="logo">
+                        <h2>{{ englishname1 }}
+                            <br>
+                            {{ englishname2 }}
+                            <br>
+                            {{ englishname3 }}
+                        </h2>
+                    </div>
+                    <div class="text">
+                        <h2>{{ texth2 }}</h2>
+                        <br>
+                        <p>{{ textp1 }}</p>
+                        <br>
+                        <p>{{ textp2 }}</p>
+                        <br>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>{{ infoli1 }}</li>
+                            <li>{{ infoli2 }}</li>
+                            <li>{{ infoli3 }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rightArea">
+                <div class="content">
+                    <ul>
+                        <li><img src="img/1.jpg"></li>
+                        <li><img src="img/2.jpg"></li>
+                        <li><img src="img/3.jpg"></li>
+                        <li><img src="img/4.jpg"></li>
+                        <li><img src="img/5.jpg"></li>
+                        <li><img src="img/6.jpg"></li>
+                        <li><img src="img/7.jpg"></li>
+                        <li><img src="img/8.jpg"></li>
+                        <li><img src="img/9.jpg"></li>
+                        <li><img src="img/10.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="copyright" id="copyright">
+                {{name}}{{year}} Copyright. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <button class="goTop"></button>
+    
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

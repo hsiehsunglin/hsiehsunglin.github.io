@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>謝松霖 | Hsieh Sung Lin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="flex-menu" style="bottom: 0px;">
+            <ul>
+                <li><a href="#text">About</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+            </ul>
+            <div class="social" id="social">
+                <a v-bind:href="instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+        <label for="rwd-menu-switch" class="bars"></label>
+    </header>
+
+    
+
+    <main>
+        <div class="logoArea">
+            <div class="content">
+                <div class="logo">
+                    <h2>{{ englishname1 }}
+                        <br>
+                        {{ englishname2 }}
+                        <br>
+                        {{ englishname3 }}
+                    </h2>
+                </div>
+                <div class="projects">
+                    <h3>{{ projectsList1 }}</h3>
+                </div>
+                <span class="circle"></span>
+            </div>
+        </div>
+        <div class="projectsArea">
+            <div class="item">
+                <a href="#">
+                    <div class="square">
+                        <img src="imgindex/p1.jpg" alt="loading">
+                    </div>
+                    <div class="txt">
+                        <h6>{{ time8 }}</h6>
+                        <h3>{{ project8 }}</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="square">
+                        <img src="imgindex/p2.jpg" alt="loading">
+                    </div>
+                <div class="txt">
+                    <h6>{{ time10 }}</h6>
+                    <h3>{{ project10 }}</h3>
+                </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="square">
+                        <img src="imgindex/p3.jpg" alt="loading">
+                    </div>
+                    <div class="txt">
+                        <h6>{{ time4 }}</h6>
+                        <h3>{{ project4 }}</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="square">
+                        <img src="imgindex/p4.jpg" alt="loading">
+                    </div>
+                    <div class="txt">
+                        <h6>{{ time5 }}</h6>
+                        <h3>{{ project5 }}</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="square">
+                        <img src="imgindex/p5.jpg" alt="loading">
+                    </div>
+                    <div class="txt">
+                        <h6>{{ time7 }}</h6>
+                        <h3>{{ project7 }}</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="square">
+                        <img src="imgindex/p6.jpg" alt="loading">
+                    </div>
+                    <div class="txt">
+                        <h6>{{ time1 }}</h6>
+                        <h3>{{ project1 }}</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="square">
+                        <img src="imgindex/p7.jpg" alt="loading">
+                    </div>
+                    <div class="txt">
+                        <h6>{{ time2 }}</h6>
+                        <h3>{{ project2 }}</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="square">
+                        <img src="imgindex/p8.jpg" alt="loading">
+                    </div>
+                    <div class="txt">
+                        <h6>{{ time6 }}</h6>
+                        <h3>{{ project6 }}</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="copyright" id="copyright">
+                {{name}}{{year}} Copyright. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <button class="goTop"></button>
+    
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
