@@ -1,2 +1,2 @@
 # 謝松霖 | Hsieh Sung Lin
-<a href="#text">GO PERSONAL WEBSITE</a>
+<a href="https://hsiehsunglin.github.io/">前往個人網站</a>
